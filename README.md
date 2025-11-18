@@ -5,7 +5,7 @@ A serverless API that allows users to create, track, and monitor their daily hab
 
 Many people struggle to maintain consistent daily routines because they lack a simple and organized way to track habits and stay accountable. Existing habit-tracking apps often feel overwhelming, bloated, or paywalled. This project provides a minimal, distraction-free backend system that focuses on the fundamentals: logging habits, marking progress, and reviewing daily status. The lightweight API can integrate with personal tools, mobile apps, dashboards, or future frontend clients.
 
-User / Customer
+# User / Customer
 
 This solution is designed for:
 
@@ -14,3 +14,35 @@ Individuals seeking to build consistency in personal routines (e.g., studying, e
 Developers who want a ready-made backend for a habit-tracking feature in web or mobile applications.
 
 Small teams or groups looking for simple daily accountability using different x-user-id identifiers.
+
+AWS Services used: 
+
+Function 
+
+AWS Service 
+
+Frontend or Entry Point 
+
+API Gateway (REST API) 
+
+Compute / Logic Layer 
+
+AWS Lambda 
+
+Storage / Database 
+
+DynamoDB 
+
+Notifications / Messaging  
+
+Amazon SNS or SES 
+
+Security / IAM Roles 
+
+AWS IAM (Roles & Policies) 
+
+Monitoring / Logging 
+
+Amazon CloudWatch Logs & Metrics 
+
+
