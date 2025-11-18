@@ -1,6 +1,7 @@
 # habit-tracker-api
 A serverless API that allows users to create, track, and monitor their daily habits in a simple, consistent way. The API exposes endpoints for adding habits, recording daily progress, and retrieving the user’s completion status for the day.
-Problem Statement
+
+# Problem Statement
 
 Many people struggle to maintain consistent daily routines because they lack a simple and organized way to track habits and stay accountable. Existing habit-tracking apps often feel overwhelming, bloated, or paywalled. This project provides a minimal, distraction-free backend system that focuses on the fundamentals: logging habits, marking progress, and reviewing daily status. The lightweight API can integrate with personal tools, mobile apps, dashboards, or future frontend clients.
 
