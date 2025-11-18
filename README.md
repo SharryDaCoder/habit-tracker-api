@@ -1,5 +1,9 @@
-## Architecture Diagram  
+# Architecture Diagram  
 ![Architecture Diagram](HabitTracker.drawio.png) 
+
+# Architecture Overview
+
+This project uses a fully serverless architecture built on AWS. Users interact with the API through Amazon API Gateway, which serves as the entry point for all HTTP requests. API Gateway triggers an AWS Lambda function that contains the application’s logic for creating habits, recording daily progress, and retrieving habit status. The Lambda function reads and stores data in Amazon DynamoDB across two tables: Habits and HabitEntries. AWS IAM manages secure, least-privilege permissions for Lambda to access DynamoDB. All logs and metrics generated during execution are captured in Amazon CloudWatch for monitoring and troubleshooting.
 
 # habit-tracker-api
 A serverless API that allows users to create, track, and monitor their daily habits in a simple, consistent way. The API exposes endpoints for adding habits, recording daily progress, and retrieving the user’s completion status for the day.
