@@ -15,34 +15,17 @@ Developers who want a ready-made backend for a habit-tracking feature in web or 
 
 Small teams or groups looking for simple daily accountability using different x-user-id identifiers.
 
-AWS Services used: 
+# AWS Services used: 
+| Function / Layer            | AWS Service               |
+|-----------------------------|---------------------------|
+| Frontend / Entry Point      | API Gateway (REST API)    |
+| Compute / Logic Layer       | AWS Lambda                |
+| Storage / Database          | Amazon DynamoDB           |
+| Notifications / Messaging   | Amazon SNS or SES         |
+| Security / IAM Roles        | AWS IAM                   |
+| Monitoring / Logging        | Amazon CloudWatch         |
 
-Function 
+Why REST API (not HTTP API)?
 
-AWS Service 
-
-Frontend or Entry Point 
-
-API Gateway (REST API) 
-
-Compute / Logic Layer 
-
-AWS Lambda 
-
-Storage / Database 
-
-DynamoDB 
-
-Notifications / Messaging  
-
-Amazon SNS or SES 
-
-Security / IAM Roles 
-
-AWS IAM (Roles & Policies) 
-
-Monitoring / Logging 
-
-Amazon CloudWatch Logs & Metrics 
-
-
+REST API provides richer routing, request/response mapping, debugging options, and fine-grained control; all important when building a multi-endpoint serverless backend.
+HTTP API is cheaper and faster, but offers fewer features and less visibility, making REST API a better fit for this project.
